@@ -21,6 +21,7 @@ section {
   padding: 10px;
   background-color: #1b057c;
 }
+
 img {
   height: 40px;
   width: 120px;
@@ -28,30 +29,19 @@ img {
 ul {
   list-style: none;
 }
+.hide {
+  justify-content: right;
+}
 .hide li {
   display: inline-block;
-  text-decoration: none;
   padding: 10px;
 }
 .hide li a {
   color: #badc58;
   padding: 10px;
-  background: #1b057c;
-  border-radius: 5px;
-  text-decoration-line: none;;
-}
-.hide li a:hover {
-  color: #1b057c;
-  background: #badc58;
-  border-radius: 5px;
   text-decoration-line: none;
 }
-.nav-menu-right {
-  padding: 5px;
-}
-.nav-menu-right a{
-  color: #badc58;
-}
+
 
 
 /*======================== Banner =============================*/

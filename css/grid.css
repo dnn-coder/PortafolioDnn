@@ -1,4 +1,5 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
@@ -15,7 +16,7 @@ section {
 .nav {
   display: flex;
   justify-content: space-between;
-  height: 40px;
+  height: 60px;
   width: 100%;
   padding: 10px;
   background-color: #1b057c;
@@ -28,21 +29,28 @@ img {
   display: inline-block;
   text-decoration: none;
   padding: 10px;
+  list-style: none;
 }
-li a {
+.hide li a {
   color: #badc58;
-  margin: 10px;
   padding: 10px;
   background: #1b057c;
   border-radius: 5px;
-  text-decoration-line: none;
-  text-decoration: none;
+  text-decoration-line: none;;
 }
-.hide a:hover {
+.hide li a:hover {
   color: #1b057c;
   background: #badc58;
   border-radius: 5px;
   text-decoration-line: none;
+}
+.nav-menu-right {
+  list-style: none;
+  padding: 10px;
+  
+}
+.nav-menu-right a{
+  color: #badc58;
 }
 
 

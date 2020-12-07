@@ -13,16 +13,16 @@
 </head>
 <body>
     <div class="container ">
-        <nav class="nav-main show">
+        <nav class="nav-main">
             <img src="./img/LOGO.png" alt="">
-            <ul class="hide  ">
+            <ul id="menu" class="lista hide">
                 <li><a href="#">Acerca de mi</a></li>
                 <li><a href="#">Mis Proyectos</a></li>
                 <li><a href="#">Mi Educacion</a></li>
             </ul>
-            <ul class=" menu-btn">
-                <li >
-                    <a><i class="fas fa-align-justify fa-2x"></i></a>
+            <ul class="menu-btn">
+                <li>
+                    <a onclick="showMenu()" href="#"><i class="fas fa-align-justify fa-2x"></i></a>
                 </li>                
             </ul>
         </nav>
@@ -52,23 +52,46 @@
     <!-- Posts -->
     <section class="posts">
         <div class="container primary-text">
-            <h3>Recent posts</h3>
+            <h3>Recientes</h3>
             <div class="row">
                 <div class="col-md-6 paddingless">
                     <div class="card">
                         <div class="card-body">
-                            <h4>Título</h4>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint libero similique quod quisquam blanditiis unde suscipit. Cum, nobis. Voluptatem sit dolorem excepturi expedita perferendis tempore obcaecati impedit sed dicta minima.
+                            <h3>7mo semestre aprovado</h3>
+                            <h5>Popayan, viernes 4 de diciembre </h5>
+                            <p>Soy estudiante de 7mo semestre aprobado de ingeniería de sistemas. Aprobando materias como investigación de operaciones, Administración de bases de datos, algoritmos computacionales, compiladores, sistemas digitales etc. Me gustaría tratar más a fondo la programación y tratar de trabajar con equipos para adquirir experiencia.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="card">
                         <div class="card-body">
-                            <h4>Título</h4>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint libero similique quod quisquam blanditiis unde suscipit. Cum, nobis. Voluptatem sit dolorem excepturi expedita perferendis tempore obcaecati impedit sed dicta minima.
+                            <h3>Ingreso a la escuela Academlo</h3>
+                            <h5>Popayan, lunes 16 de noviembre </h5>
+                            <p>Entusiasta de la programación, y estoy muy motivado con esta academia. Me gusta ahondar en temas relevantes como el trabajo en equipo y la programación funcional, espero poder adaptarme a los cambios no solo en cuestión de equipo de trabajo sino en tecnologías, ya que esta academia me ofrece educación efectiva y de alta calidad.</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Trabajos-->
+    <section>
+        <div class="container">
+            <h3>Mis proyectos</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="first-work">
+                        
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <h2>Mi primer trabajo</h2>
+                    <span class=" tag primary-tag space-top">Noviembre, 2020</span>
+                    <p class="space-top">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quas dolore laboriosam, repudiandae illum perspiciatis esse eius! Quae ut tempore ad nesciunt, eos quos repellendus, deleniti eaque dolor iusto perspiciatis nam. Fugiat illum quibusdam ad soluta itaque animi temporibus nisi ab eveniet, molestiae laudantium minus natus eaque ipsum aspernatur odio.
+                        
+                    </p>
                 </div>
             </div>
         </div>

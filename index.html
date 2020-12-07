@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
     <!--fuente navegador-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
@@ -11,19 +13,20 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <script src="./javascript.js"></script>
 </head>
+
 <body>
     <div class="container ">
         <nav class="nav-main">
             <img src="./img/LOGO.png" alt="">
             <ul id="menu" class="lista hide">
                 <li><a href="#">Acerca de mi</a></li>
+                <li><a href="#">Habilidades</a></li>
                 <li><a href="#">Mis Proyectos</a></li>
-                <li><a href="#">Mi Educacion</a></li>
             </ul>
             <ul class="menu-btn">
                 <li>
                     <a onclick="showMenu()" href="#"><i class="fas fa-align-justify fa-2x"></i></a>
-                </li>                
+                </li>
             </ul>
         </nav>
     </div>
@@ -38,7 +41,8 @@
                     <div class="col-md-8">
                         <h1 class="space-top">Hola, soy Danny</h1>
                         <p class="space-top">
-                            Soy un entusiasta de la tecnología, me apasiona saber que se puede hacer con esa pequeña cajita llena de circuitos integrados. A lo largo de mi vida he pasado por muchas etapas, pero sin duda esta es una de las mejores. ¿Te gustaría saber cuáles son mis habilidades y experiencia? Te invito a que pases por mi blog y eches un vistazo…. ¡Nos vemos!
+                            Soy un entusiasta de la tecnología, me apasiona saber que se puede hacer con esa pequeña cajita llena de circuitos integrados. A lo largo de mi vida he pasado por muchas etapas, pero sin duda esta es una de las mejores. ¿Te gustaría saber cuáles son mis
+                            habilidades y experiencia? Te invito a que pases por mi blog y eches un vistazo…. ¡Nos vemos!
                         </p>
                         <button class="primary-button space-top color">
                             Descargar CV
@@ -52,14 +56,15 @@
     <!-- Posts -->
     <section class="posts">
         <div class="container primary-text">
-            <h3>Recientes</h3>
+            <h3>Acerca de mi</h3>
             <div class="row">
                 <div class="col-md-6 paddingless">
                     <div class="card">
                         <div class="card-body">
                             <h3>7mo semestre aprovado</h3>
                             <h5>Popayan, viernes 4 de diciembre </h5>
-                            <p>Soy estudiante de 7mo semestre aprobado de ingeniería de sistemas. Aprobando materias como investigación de operaciones, Administración de bases de datos, algoritmos computacionales, compiladores, sistemas digitales etc. Me gustaría tratar más a fondo la programación y tratar de trabajar con equipos para adquirir experiencia.</p>
+                            <p>Estudiante de 7mo semestre aprobado de ingeniería de sistemas. Aprobando materias como investigación de operaciones, Administración de bases de datos, algoritmos computacionales, compiladores, sistemas digitales etc. Me gustaría
+                                tratar más a fondo la programación y tratar de trabajar con equipos para adquirir experiencia.</p>
                         </div>
                     </div>
                 </div>
@@ -68,33 +73,191 @@
                         <div class="card-body">
                             <h3>Ingreso a la escuela Academlo</h3>
                             <h5>Popayan, lunes 16 de noviembre </h5>
-                            <p>Entusiasta de la programación, y estoy muy motivado con esta academia. Me gusta ahondar en temas relevantes como el trabajo en equipo y la programación funcional, espero poder adaptarme a los cambios no solo en cuestión de equipo de trabajo sino en tecnologías, ya que esta academia me ofrece educación efectiva y de alta calidad.</p>
+                            <p>Entusiasta de la programación, y estoy muy motivado con esta academia. Me gusta ahondar en temas relevantes como el trabajo en equipo y la programación funcional, espero poder adaptarme a los cambios no solo en cuestión de
+                                equipo de trabajo sino en tecnologías, ya que esta academia me ofrece educación efectiva y de alta calidad.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--Trabajos-->
+    <!--skils-->
+    <div class="container">
+        <section class="skills col-md-12 ">
+            <header>
+                <h1 class="title-underline">
+                    <span>Habilidades</span>
+                </h1>
+            </header>
+            <ul class="skills-wrapper">
+                <li class="skills-item">
+                    <div class="skills-text">
+                        <span class="skills-name">
+                            HTML
+                        </span>
+                        <span class="skills-score">
+                            40%
+                        </span>
+                    </div>
+                    <div class="skills-bar">
+                        <div class="skills-bar-fulling" style="width: 40%;">
+                        </div>
+                    </div>
+                </li>
+                <li class="skills-item">
+                    <div class="skills-text">
+                        <span class="skills-name">
+                            Css
+                        </span>
+                        <span class="skills-score">
+                            50%
+                        </span>
+                    </div>
+                    <div class="skills-bar">
+                        <div class="skills-bar-fulling" style="width: 50%;">
+                        </div>
+                    </div>
+                </li>
+                <li class="skills-item">
+                    <div class="skills-text">
+                        <span class="skills-name">
+                            Javascript
+                        </span>
+                        <span class="skills-score">
+                            20%
+                        </span>
+                    </div>
+                    <div class="skills-bar">
+                        <div class="skills-bar-fulling" style="width: 20%;">
+                        </div>
+                    </div>
+                </li>
+                <li class="skills-item">
+                    <div class="skills-text">
+                        <span class="skills-name">
+                            Java
+                        </span>
+                        <span class="skills-score">
+                            50%
+                        </span>
+                    </div>
+                    <div class="skills-bar">
+                        <div class="skills-bar-fulling" style="width: 50%;">
+                        </div>
+                    </div>
+                </li>
+                <li class="skills-item">
+                    <div class="skills-text">
+                        <span class="skills-name">
+                            Git
+                        </span>
+                        <span class="skills-score">
+                            30%
+                        </span>
+                    </div>
+                    <div class="skills-bar">
+                        <div class="skills-bar-fulling" style="width: 30%;">
+                        </div>
+                    </div>
+                </li>
+                <li class="skills-item">
+                    <div class="skills-text">
+                        <span class="skills-name">
+                            Python
+                        </span>
+                        <span class="skills-score">
+                            20%
+                        </span>
+                    </div>
+                    <div class="skills-bar">
+                        <div class="skills-bar-fulling" style="width: 20%;">
+                        </div>
+                    </div>
+                </li>
+                <li class="skills-item">
+                    <div class="skills-text">
+                        <span class="skills-name">
+                            SQL
+                        </span>
+                        <span class="skills-score">
+                            50%
+                        </span>
+                    </div>
+                    <div class="skills-bar">
+                        <div class="skills-bar-fulling" style="width: 50%;">
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </section>
+    </div>
+    <!--proyects-->
     <section>
-        <div class="container">
+        <div class="container primary-text">
             <h3>Mis proyectos</h3>
+            <!--primer trabajo-->
             <div class="row">
                 <div class="col-md-4">
-                    <div class="first-work">
-                        
+                    <div class="work first-work">
+                        <div class="overlay-info">Informacion adicional</div>
                     </div>
                 </div>
                 <div class="col-md-8">
                     <h2>Mi primer trabajo</h2>
                     <span class=" tag primary-tag space-top">Noviembre, 2020</span>
                     <p class="space-top">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quas dolore laboriosam, repudiandae illum perspiciatis esse eius! Quae ut tempore ad nesciunt, eos quos repellendus, deleniti eaque dolor iusto perspiciatis nam. Fugiat illum quibusdam ad soluta itaque animi temporibus nisi ab eveniet, molestiae laudantium minus natus eaque ipsum aspernatur odio.
-                        
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quas dolore laboriosam, repudiandae illum perspiciatis esse eius! Quae ut tempore ad nesciunt, eos quos repellendus, deleniti eaque dolor iusto perspiciatis nam. Fugiat illum quibusdam ad soluta
+                        itaque animi temporibus nisi ab eveniet, molestiae laudantium minus natus eaque ipsum aspernatur odio.
                     </p>
                 </div>
             </div>
+            <!--segundo trabajo-->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="work second-work">
+                        <div class="overlay-info">Informacion adicional</div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <h2>Mi segundo trabajo</h2>
+                    <span class=" tag primary-tag space-top">Noviembre, 2020</span>
+                    <p class="space-top">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quas dolore laboriosam, repudiandae illum perspiciatis esse eius! Quae ut tempore ad nesciunt, eos quos repellendus, deleniti eaque dolor iusto perspiciatis nam. Fugiat illum quibusdam ad soluta
+                        itaque animi temporibus nisi ab eveniet, molestiae laudantium minus natus eaque ipsum aspernatur odio.
+                    </p>
+                </div>
+            </div>
+            <!--tercer trabajo-->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="work third-work">
+                        <div class="overlay-info">Informacion adicional</div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <h2>Mi tercer trabajo</h2>
+                    <span class=" tag primary-tag space-top">Noviembre, 2020</span>
+                    <p class="space-top">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quas dolore laboriosam, repudiandae illum perspiciatis esse eius! Quae ut tempore ad nesciunt, eos quos repellendus, deleniti eaque dolor iusto perspiciatis nam. Fugiat illum quibusdam ad soluta
+                        itaque animi temporibus nisi ab eveniet, molestiae laudantium minus natus eaque ipsum aspernatur odio.
+                    </p>
+                </div>
+            </div>
+            <hr>
         </div>
     </section>
+    <!--footer-->
+    <footer>
+        <div class="d-flex justify-content-center align-items-center">
+            <i class="fa-3x fab fa-facebook-square"></i>
+            <i class="fa-3x fab fa-instagram"></i>
+            <i class="fa-3x fab fa-twitter-square"></i>
+            <i class="fa-3x fab fa-linkedin"></i>
+        </div>
+        <div class="copyrigth">&#169 Todos los derechos reservados</div>
+    </footer>
+
 </body>
+
 </html>

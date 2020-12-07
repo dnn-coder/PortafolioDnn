@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+section {
+    padding: 50px 0;
+}
+
+
+/*======================== Navigation =============================*/
+
+.nav-main {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    padding: 10px;
+    background-color: #1b057c;
+    border-radius: 5px;
+}
+
+.nav-main .lista {
+    margin-right: 30px;
+}
+
+img {
+    height: 40px;
+    width: 120px;
+}
+
+ul li {
+    list-style: none;
+}
+
+.lista {
+    justify-content: right;
+    display: flex;
+    padding: 10px;
+}
+
+.lista li a {
+    color: #badc58;
+    text-decoration-line: none;
+    padding: 10px;
+}
+
+.menu-btn {
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 50px;
+    z-index: 2;
+}
+
+
+/*======================== Banner =============================*/
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(158, 158, 158, 0.38);
+    background-image: url('../img/face.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: auto;
+}
+
+
+/* ======================== Posts =============================*/
+
+.posts {
+    background-color: azure;
+}
+
+h5 {
+    color: gray;
+}
+
+
+/*=======================trabajos=============================*/
+
+.work {
+    height: 100%;
+    min-height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.overlay-info {
+    position: absolute;
+    top: 0%;
+    right: 0;
+    bottom: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: bottom 1s;
+    overflow: hidden;
+}
+
+.work:hover .overlay-info {
+    bottom: 0;
+}
+
+.first-work {
+    background-image: url('../img/work1.jpg');
+}
+
+.second-work {
+    background-image: url('../img/work1.jpg');
+}
+
+.third-work {
+    background-image: url('../img/work1.jpg');
+}
+
+
+/*========footer=========*/
+
+footer {
+    background-color: rgba(128 128 128 / 33%);
+    padding: 40px;
+}
+
+footer div i {
+    margin: 10px;
+}
+
+.copyrigth {
+    text-align: center;
+}
+
+
+/*======================== Components =============================*/
+
+.primary-button {
+    background-color: #1b057c;
+    color: #badc58;
+    padding: 8px 15px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.primary-button:hover {
+    background-color: #badc58;
+    color: #1b057c;
+}
+
+.card {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+    background-color: white;
+}
+
+.card .card-body {
+    padding: 20px;
+}
+
+
+/*==========tag component==========*/
+
+.tag {
+    min-width: 100px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: grey;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.primary-tag {
+    background-color: #1b057c;
+    color: #badc58;
+}
+
+
+/*======================== Helpers =============================*/
+
+.primary-text {
+    color: #0d1568;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.space-top {
+    margin-top: 20px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+
+/*=======================skils================*/
+
+.title-underline {
+    color: #1b057c;
+    text-align: center;
+    font-size: 26px;
+    text-decoration: underline;
+}
+
+.title-underline span {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.skills-wrapper {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+}
+
+.skills-text {
+    color: #badc58;
+    font-weight: 700;
+    margin: 10px 0;
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+.skills-name {
+    float: left;
+}
+
+.skills-score {
+    float: right
+}
+
+.skills-bar {
+    width: 100%;
+    height: 30px;
+    background: #9e9e9e;
+}
+
+.skills-bar-fulling {
+    background-color: #1b057c;
+    height: 30px;
+    display: inline-block;
+}
+
+[class*="col-"] {
+    padding: 10px;
+}

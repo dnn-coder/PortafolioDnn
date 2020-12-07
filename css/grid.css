@@ -20,6 +20,7 @@ section {
   width: 100%;
   padding: 10px;
   background-color: #1b057c;
+  border-radius: 5px;
 }
 .nav-main .hide {
   margin-right: 30px;
@@ -108,13 +109,13 @@ ul li {
   padding: 10px;
 }
 /* small devices */
-@media (max-width: 625px) {
+@media (max-width: 576px) {
   .hide {
     display: block;
     position: absolute;
     top: 60px;
     right: 0;
-    background: gray;
+    background: rgba(27 5 124 / 46%);
     height: 100%;
     padding: 30px;
     opacity: .8;
@@ -165,8 +166,15 @@ ul li {
     width: 100%;
   }
 }
+@media (min-width: 576px) {
+  .menu-btn {
+    display: none;
+  }
 /* medium devices*/
 @media (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
   .row {
     display: flex;
   }

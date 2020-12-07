@@ -13,7 +13,7 @@ section {
   padding: 50px 0;
 }
 /*======================== Navigation =============================*/
-.nav {
+.nav-main {
   display: flex;
   justify-content: space-between;
   height: 60px;
@@ -21,28 +21,36 @@ section {
   padding: 10px;
   background-color: #1b057c;
 }
+.nav-main .hide {
+  margin-right: 30px;
+}
 
 img {
   height: 40px;
   width: 120px;
 }
-ul {
+ul li {
   list-style: none;
+  
 }
 .hide {
   justify-content: right;
   display: flex;
-}
-.hide li {
-  
   padding: 10px;
-}
-.hide li a {
-  color: #badc58;
-  padding: 10px;
-  text-decoration-line: none;
 }
 
+.hide li a {
+  color: #badc58;
+  text-decoration-line: none;
+  padding: 10px;
+}
+.menu-btn {
+  position: absolute;
+  cursor: pointer;
+  top: 15px;
+  right: 50px;
+  z-index: 2;
+}
 
 
 /*======================== Banner =============================*/
@@ -100,13 +108,25 @@ ul {
   padding: 10px;
 }
 /* small devices */
-@media (max-width: 576px) {
+@media (max-width: 625px) {
   .hide {
     display: block;
     position: absolute;
-    top: 0;
+    top: 60px;
     right: 0;
     background: gray;
+    height: 100%;
+    padding: 30px;
+    opacity: .8;
+  
+  }
+   ul.nav-main .show{
+    transform: translateX(20px);
+  }
+
+  .hide li {
+    padding: 20px;
+    border-bottom: #badc58 solid 1px;
   }
   .col-sm-1 {
     width: 8.333%;

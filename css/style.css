@@ -5,6 +5,24 @@
     font-family: 'Oswald', sans-serif;
 }
 
+body {
+    background: #0f0c29;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.icono {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+hr {
+    margin: 10px 0;
+}
+
 .container {
     width: 90%;
     margin: auto;
@@ -22,22 +40,26 @@ section {
     justify-content: space-between;
     height: 60px;
     width: 100%;
-    padding: 10px;
-    background-color: #1b057c;
-    border-radius: 5px;
+    padding: 20px 10px;
+    background-color: #22142b;
+    align-items: center;
+}
+
+a {
+    font-size: 22px;
 }
 
 .nav-main .lista {
     margin-right: 30px;
 }
 
-img {
-    height: 40px;
-    width: 120px;
-}
-
 ul li {
     list-style: none;
+}
+
+ul li i {
+    list-style: none;
+    color: #61dafb;
 }
 
 .lista {
@@ -47,15 +69,16 @@ ul li {
 }
 
 .lista li a {
-    color: #badc58;
+    color: #61dafb;
     text-decoration-line: none;
     padding: 10px;
+    margin: 0;
 }
 
 .menu-btn {
     position: absolute;
     cursor: pointer;
-    top: 15px;
+    top: 0;
     right: 50px;
     z-index: 2;
 }
@@ -63,7 +86,19 @@ ul li {
 
 /*======================== Banner =============================*/
 
-.profile-picture {
+.main-container {
+    height: 800px;
+    width: 90%;
+    background: url('/img/pexels-photo-1626481.jpeg') no-repeat center center/cover;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+/* .profile-picture {
     width: 150px;
     height: 150px;
     background-color: rgba(158, 158, 158, 0.38);
@@ -72,10 +107,107 @@ ul li {
     background-position: center;
     border-radius: 50%;
     margin: auto;
+} */
+
+.principal-page {
+    font-size: 2rem;
+    color: #33d9b2;
+    margin: auto;
+}
+
+.principal-message {
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: #33d9b2;
+}
+
+.greetings {
+    font-family: 'Dancing Script', cursive;
+}
+
+.col-md-4 {
+    justify-content: center;
+}
+
+
+/*=======================skils================*/
+
+.cards-news {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    width: 90%;
+    height: 700px;
+    background: url('/img/fondo2.jpeg') no-repeat center center/cover;
+}
+
+.cards-news .content-card-news {
+    width: 40%;
+    margin-top: 50px;
+    padding: 100px 0 0 30px;
+    color: white;
+}
+
+.cards-news h2 {
+    margin: 10px 0 20px 0;
+    color: #61dafb;
+}
+
+.container-skills {
+    width: 40%;
+}
+
+.skills-wrapper {
+    max-width: 400px;
+    min-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+}
+
+.skills-text {
+    color: white;
+    font-weight: 700;
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+.skills-name {
+    float: left;
+}
+
+.skills-score {
+    float: right
+}
+
+.skills-bar {
+    width: 100%;
+    height: 30px;
+    background: #9e9e9e;
+}
+
+.skills-bar-fulling {
+    background-color: #61dafb;
+    height: 30px;
+    display: inline-block;
+}
+
+.skills-bar-fulling:hover {
+    background-color: white;
+    height: 30px;
+    display: inline-block;
 }
 
 
 /* ======================== Posts =============================*/
+
+.card-body img {
+    width: 100%;
+    height: 300px;
+}
 
 .posts {
     background-color: azure;
@@ -83,6 +215,37 @@ ul li {
 
 h5 {
     color: gray;
+}
+
+.btn {
+    margin-top: 10px;
+    background-color: white;
+    color: #61dafb;
+    padding: 7px 14px;
+    border: 0;
+    width: 100%;
+    border: 1px #61dafb solid;
+}
+
+.btn:hover {
+    margin-top: 10px;
+    background-color: #61dafb;
+    color: #20232a;
+    padding: 8px 15px;
+    border: 0;
+}
+
+.btn-news {
+    position: absolute;
+    background-color: transparent;
+    color: #61dafb;
+    padding: 5px 10px;
+    border: 0;
+    width: 145px;
+}
+
+.btn-news:hover {
+    text-decoration: underline;
 }
 
 
@@ -118,15 +281,15 @@ h5 {
 }
 
 .first-work {
-    background-image: url('../img/work1.jpg');
+    background-image: url('../img/work1.png');
 }
 
 .second-work {
-    background-image: url('../img/work2.jpg');
+    background-image: url('../img/work2.png');
 }
 
 .third-work {
-    background-image: url('../img/work3.jpg');
+    background-image: url('../img/work3.png');
 }
 
 
@@ -149,20 +312,32 @@ footer div i {
 /*======================== Components =============================*/
 
 .primary-button {
-    background-color: #1b057c;
-    color: #badc58;
+    background-color: #33d9b2;
+    color: #20232a;
     padding: 8px 15px;
     border: 0;
-    border-radius: 5px;
 }
 
 .primary-button:hover {
-    background-color: #badc58;
+    background-color: white;
     color: #1b057c;
 }
 
+.secondary-button {
+    background-color: transparent;
+    color: #33d9b2;
+    padding: 8px 15px;
+    border: 0;
+}
+
+.secondary-button:hover {
+    color: white;
+    text-decoration: underline;
+}
+
 .card {
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .20);
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
     background-color: white;
 }
 
@@ -183,8 +358,8 @@ footer div i {
 }
 
 .primary-tag {
-    background-color: #1b057c;
-    color: #badc58;
+    background-color: #ff9ff3;
+    color: #7fff00;
 }
 
 
@@ -214,57 +389,15 @@ footer div i {
     align-items: center;
 }
 
-
-/*=======================skils================*/
-
-.title-underline {
-    color: #1b057c;
-    text-align: center;
-    font-size: 26px;
-    text-decoration: underline;
-}
-
-.title-underline span {
-    display: inline-block;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.skills-wrapper {
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    list-style: none;
-}
-
-.skills-text {
-    color: #badc58;
-    font-weight: 700;
-    margin: 10px 0;
-    padding: 10px 0;
-    overflow: hidden;
-}
-
-.skills-name {
-    float: left;
-}
-
-.skills-score {
-    float: right
-}
-
-.skills-bar {
-    width: 100%;
-    height: 30px;
-    background: #9e9e9e;
-}
-
-.skills-bar-fulling {
-    background-color: #1b057c;
-    height: 30px;
-    display: inline-block;
+.secondary-text {
+    color: #61dafb;
 }
 
 [class*="col-"] {
     padding: 10px;
+}
+
+a {
+    color: #61dafb;
+    text-decoration: none;
 }
